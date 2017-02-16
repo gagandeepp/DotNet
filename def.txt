@@ -1,0 +1,9 @@
+System.Text.StringBuilder
+
+WHY STRING IS IMMUTABLE
+
+
+ArgumentException, ArgumentNullException , ArgumentOutOfRangeException, ArithmeticException, DivideByZeroException ,OverflowException , IndexOutOfRangeException ,InvalidCastException ,InvalidOperationException , IOEndOfStreamException , NullReferenceException , OutOfMemoryException , StackOverflowException etc.
+
+ System.Globalization namespace contains CultureInfo class. This class provides information about a specific culture, i.e. datetime format, currency, language etc.
+

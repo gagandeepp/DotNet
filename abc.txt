@@ -1,0 +1,47 @@
+1) Pre-JIT -  Complies complete source code into native code at the time of deployment.
+
+2) Econo-JIT  - Complies methods that are called at runtime.
+
+3) Normal-JIT - Complies methods that are called at runtime and get stored in cache. Next time when the same method is called, it will be taken from cache.
+
+
+To install assembly in Cache, use  Gacutil. To run Gacutil, goto "Visual Studio Command Prompt" and type "gacutil -i <assembly_name>", where (assembly_name) is the DLL name of the project. To uninstall assembly, type gacutil –u <assembly name> in  Visual Studio Command Prompt.
+
+A satellite assembly are used when multilingual (UI) application are created. Satellite assembly is a compiled library that contains localized resources  which provides us with the capability of designing and deploying solutions to multiple cultures, rather than hard coding texts, bitmaps etc
+
+We can prevent .NET DLL to be decompiled upto an extent by Obfuscate Source code, asymmetric encryption and encrypted w32 wrapper application.
+
+
+Code Document Object Model are code generators which are used  to minimize repetitive coding tasks, and to minimize the number of human-generated source code lines.
+
+Ngen.exe creates compiled processor-specific machine code called native images which are files and installs them into the native image cache on the local computer. The runtime will use native images from the cache rather than using the JIT compiler to compile the original assembly.
+
+CLS - VB case sensitive and C# is not
+CTS- int in vb and c# have different syntax but get compiled to common data type
+
+
+
+
+Application domain is the boundary within which an application runs. A process can contain multiple application domains. Application domains provide an isolated environment to applications that is similar to the isolation provided by processes. An application running inside one application domain cannot directly access the code running inside another application domain. To access the code running in another application domain, an application needs to use a proxy.
+AppDomains are usually created by hosts. Examples of hosts are the Windows Shell, ASP.NET and IE. When you run a .NET application from the command-line, the host is the Shell. The Shell creates a new AppDomain for every application. AppDomains can also be explicitly created by .NET applications.
+The AppDomain class is used to create and terminate Application Domains, load and unload assemblies and types and enumerates assemblies and threads in a domain.
+CreateDomain(),CreateInstance(),Load()
+
+You need to assign a strong name to an assembly to place it in the GAC and make it globally accessible. A strong name consists of a name that consists of an assembly's identity (text name, version number, and culture information), a public key and a digital signature generated over the assembly.  The .NET Framework provides a tool called the Strong Name Tool (Sn.exe), which allows verification and key pair and signature generation.
+
+
+ResGen.exe is a tool that is used to convert resource files in the form of .txt or .resx files to common language runtime binary .resources files that can be compiled into satellite assemblies.
+
+CAS - Defines permissions and permission sets that represent the right to access various system resources.
+
+
+The caspol tool grants and modifies permissions to code groups at the user policy, machine policy, and enterprise policy levels.
+
+The CLR maintains a table called the intern pool that contains the literal strings in a program. This ensures that repeated use of the same constant strings in your code will utilize the same string reference. The System.String class provides an Intern method that ensures a string is in the intern pool and returns the reference to it.
+
+
+DLL Hell describes the difficulty in managing DLLs on a system; this includes multiple copies of a DLL.
+
+DLL Hell problem is solved in .NET with the introduction of Assembly versioning.
+- It allows the application to specify not only the library it needs to run, but also the version of the assembly.
+- Versioning is the technique to provide the .dll file to prevent them from replacement.
