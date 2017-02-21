@@ -45,3 +45,14 @@ DLL Hell describes the difficulty in managing DLLs on a system; this includes mu
 DLL Hell problem is solved in .NET with the introduction of Assembly versioning.
 - It allows the application to specify not only the library it needs to run, but also the version of the assembly.
 - Versioning is the technique to provide the .dll file to prevent them from replacement.
+
+
+Web.config 
+It is used to store the application level configuration. Sometimes it inherits the setting from the machine.config. It parses at runtime, means if you make any changes then web application will load all the settings in the config file. 
+
+App.config
+It is also a special type of configuration file which is basically used with Windows Services, Windows application, Console Apps or it can be WPF application or any others.
+When you run the application which contains the app.config, at the time of compilation a copy of app.config with different name moves into build folder for running the application, So that's why we need to restart the program if any changes made in app.config.
+
+Machine.config 
+It is a special type of configuration file which creates into the OS when you install visual studio. This stores machine level configuration setting.
