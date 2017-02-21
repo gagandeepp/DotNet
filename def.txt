@@ -6,4 +6,7 @@ WHY STRING IS IMMUTABLE
 ArgumentException, ArgumentNullException , ArgumentOutOfRangeException, ArithmeticException, DivideByZeroException ,OverflowException , IndexOutOfRangeException ,InvalidCastException ,InvalidOperationException , IOEndOfStreamException , NullReferenceException , OutOfMemoryException , StackOverflowException etc.
 
  System.Globalization namespace contains CultureInfo class. This class provides information about a specific culture, i.e. datetime format, currency, language etc.
+ 
+ 
+ A satellite assembly is a .NET Framework assembly containing resources specific to a given language. Using satellite assemblies, you can place resources for different languages in different assemblies, and the correct assembly is loaded into memory only if the user selects to view the application in that language.
 
