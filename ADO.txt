@@ -88,3 +88,40 @@ DataView custDV = new DataView(custDS.Tables["Customers"],
     "Country = 'USA'",   
     "ContactName",   
     DataViewRowState.CurrentRows);  
+
+
+Transactions in ADO.Net
+private static void Demo1() 
+   {
+      SqlConnection db = new SqlConnection("connstringhere");
+      SqlTransaction transaction;
+
+      db.Open();
+      transaction = db.BeginTransaction();
+      try 
+      {
+         new SqlCommand("INSERT INTO TransactionDemo " +
+            "(Text) VALUES ('Row1');", db, transaction)
+            .ExecuteNonQuery();
+         new SqlCommand("INSERT INTO TransactionDemo " +
+            "(Text) VALUES ('Row2');", db, transaction)
+            .ExecuteNonQuery();
+         new SqlCommand("INSERT INTO CrashMeNow VALUES " +
+            "('Die', 'Die', 'Die');", db, transaction)
+            .ExecuteNonQuery();
+         transaction.Commit();
+      } 
+      catch (SqlException sqlError) 
+      {
+         transaction.Rollback();
+      }
+      db.Close();
+   }
+
+Transactions Isolation Levels
+
+1. ReadUncommitted – This is, essentially, no isolation. Anyone can read the data placed in a table or updated immediately after the SQL statement causes the change – no commit is required. This could lead to a process having out-of-date data: it may be using a version of the data that was then rolled back out of the table!
+2. ReadCommitted – This is slightly more isolated. In this case, a transaction can only read data from the table that has already been committed. When a transaction wants to update data, it acquires a shared lock on that data and (if successful getting the lock) updates the data. Transactions outside of that transaction cannot update the data in that table until the locking transaction commits. This is only slightly more isolated, however: a SQL statement executed twice within a transaction could return a different result-set if a second transaction changes and commits the data the SQL statement executes on between the two statements. This is the default isolation level for SqlTransaction.
+3. RepeatableRead – Slowly getting more isolated. In this case, a shared lock is applied on all data queried within a transaction. This means that no other transaction can alter the data used in your transaction. This prevents the case where data you had queried once changes on subsequent queries. It does not, though, prevent the case where rows are added to the table that may be returned in subsequent queries.
+4. Serializable – Locks are placed on ranges of the tables you are using, preventing other users from changing your data or adding new rows underneath you. This is the most isolated isolation level, but it does come with the drawback of locking more data than your transaction may strictly need.
+
