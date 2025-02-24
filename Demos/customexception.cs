@@ -14,8 +14,7 @@ public class Program
 {
     public static void Main()
     {
-        try
-        {
+        try {
             ThrowCustomException();
         }
         catch (MyCustomException ex)
