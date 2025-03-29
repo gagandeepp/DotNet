@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class BrowserHistory
 {
     private LinkedList<string> history;
-    private LinkedListNode<string> current;
+    private LinkedList<string> current;
 
     public BrowserHistory()
     {

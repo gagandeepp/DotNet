@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\pratihag\\DotNet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pratihag\\DotNet\\Demos\\expressiontree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Demos\\expressiontree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pratihag\\DotNet\\Demos\\efcoreconcurrency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Demos\\efcoreconcurrency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pratihag\\DotNet\\Demos\\customexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Demos\\customexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pratihag\\DotNet\\Demos\\customformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Demos\\customformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pratihag\\DotNet\\Demos\\DelegateDemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Demos\\DelegateDemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pratihag\\DotNet\\Demos\\custommiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Demos\\custommiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pratihag\\DotNet\\Demos\\extensionmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Demos\\extensionmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,46 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "customexception.cs",
-              "DocumentMoniker": "C:\\Users\\pratihag\\DotNet\\Demos\\customexception.cs",
-              "RelativeDocumentMoniker": "Demos\\customexception.cs",
-              "ToolTip": "C:\\Users\\pratihag\\DotNet\\Demos\\customexception.cs",
-              "RelativeToolTip": "Demos\\customexception.cs",
+              "DocumentIndex": 0,
+              "Title": "efcoreconcurrency.cs",
+              "DocumentMoniker": "C:\\Users\\pratihag\\DotNet\\Demos\\efcoreconcurrency.cs",
+              "RelativeDocumentMoniker": "Demos\\efcoreconcurrency.cs",
+              "ToolTip": "C:\\Users\\pratihag\\DotNet\\Demos\\efcoreconcurrency.cs",
+              "RelativeToolTip": "Demos\\efcoreconcurrency.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T07:40:27.994Z",
+              "WhenOpened": "2025-03-06T06:48:10.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "customformatter.cs",
+              "DocumentMoniker": "C:\\Users\\pratihag\\DotNet\\Demos\\customformatter.cs",
+              "RelativeDocumentMoniker": "Demos\\customformatter.cs",
+              "ToolTip": "C:\\Users\\pratihag\\DotNet\\Demos\\customformatter.cs",
+              "RelativeToolTip": "Demos\\customformatter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T05:54:56.209Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DelegateDemo.cs",
-              "DocumentMoniker": "C:\\Users\\pratihag\\DotNet\\Demos\\DelegateDemo.cs",
-              "RelativeDocumentMoniker": "Demos\\DelegateDemo.cs",
-              "ToolTip": "C:\\Users\\pratihag\\DotNet\\Demos\\DelegateDemo.cs",
-              "RelativeToolTip": "Demos\\DelegateDemo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "custommiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\pratihag\\DotNet\\Demos\\custommiddleware.cs",
+              "RelativeDocumentMoniker": "Demos\\custommiddleware.cs",
+              "ToolTip": "C:\\Users\\pratihag\\DotNet\\Demos\\custommiddleware.cs",
+              "RelativeToolTip": "Demos\\custommiddleware.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T07:40:25.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T05:04:56.35Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "expressiontree.cs",
-              "DocumentMoniker": "C:\\Users\\pratihag\\DotNet\\Demos\\expressiontree.cs",
-              "RelativeDocumentMoniker": "Demos\\expressiontree.cs",
-              "ToolTip": "C:\\Users\\pratihag\\DotNet\\Demos\\expressiontree.cs",
-              "RelativeToolTip": "Demos\\expressiontree.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA2AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "extensionmethods.cs",
+              "DocumentMoniker": "C:\\Users\\pratihag\\DotNet\\Demos\\extensionmethods.cs",
+              "RelativeDocumentMoniker": "Demos\\extensionmethods.cs",
+              "ToolTip": "C:\\Users\\pratihag\\DotNet\\Demos\\extensionmethods.cs",
+              "RelativeToolTip": "Demos\\extensionmethods.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T07:40:18.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T04:56:16.963Z"
             }
           ]
         }

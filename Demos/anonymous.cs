@@ -1,4 +1,4 @@
-var object = new
+var obj = new
 {
     Id =1,
     Name = "Gagan",
